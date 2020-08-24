@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Js Client-side form validation</title>
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+            <h2>Create Account</h2>
+        </div>
+        <form action="/" method="GET" id="form" class="form" autocomplete="off">
+            <div class="form-control">
+                <label for="name">სახელი</label><span>*</span>     
+                <input type="text"  id="name" />
+                <small>Eror Message</small>               
+            </div>
+            <div class="form-control">
+                <label for="lastName">გვარი</label><span>*</span>     
+                <input type="text"  id="lastName" />
+                <small>Eror Message</small>                  
+            </div>
+            <div class="form-control">
+                <label for="country">ქვეყანა</label><span>*</span>      
+                <select id="country" name="country" class="form-control">
+                    <option value="Georgia" selected="selected">Georgia</option>
+                    <option value="Turkey" >Turkey</option>
+                </select> 
+                <small>Eror Message</small>    
+            </div>
+            <div class="form-control">
+                <label for="piradiNomeri">პირადი ნომერი</label><span>*</span>     
+                <input type="text"  id="piradiNomeri" />
+                <small>Eror Message</small>                 
+            </div>
+            <div class="form-control">
+                <label for="birthday">დაბადების თარიღი</label><span>*</span>     
+                <input type="date" id="birthday" name="birthday">
+                <small>Eror Message</small>   
+            </div>
+            <div class="form-control">
+                <label for="telNo">ტელეფონის ნომერი</label><span>*</span> 
+                <input id="telNo" name="telNo" type="tel">
+                <small>Eror Message</small>   
+            </div>
+            <div class="form-control">
+                <label for="email">ელ-ფოსტა</label><span>*</span>     
+                <input type="email"  id="email" />
+                <small>Eror Message</small>   
+            </div>
+            <div class="form-control">
+                <label for="password">პაროლი</label><span>*</span>     
+                <input type="password"  id="password"/>
+                <small>Eror Message</small>   
+            </div>
+            <div class="form-control">
+                <label for="username">გაიმეორეთ პაროლი</label><span>*</span> 
+                <input type="password" placeholder="პაროლის გადამოწმება" id="password2"/>
+                <small>Error message</small>
+            </div>
+            <div class="form-control">
+                <label for="username">მომხმარებელი</label><span>*</span>     
+                <input type="username" id="username"/>
+                <small>Eror Message</small>   
+            </div>
+            <button>რეგისტრაცია</button>
+        </form>
+    </div>    
+    <script src="index.js"></script>
+</body>
+</html>
+
+
+
+
+
+
+
+
+
